@@ -10,14 +10,11 @@ using namespace std;
 //Formato
 void gotoxy(int x, int y);
 
-
-
 void posiciones(double P[9][3],double th[9],double d[5]);
 void lectura(double Q[3],double th[9]);
 void posicionest(double P[9][3],double th[9],double d[5],int i);
 void matrizmultiplicacion(double m1[9][4][4], double m2[9][4][4],double m3[9][4][4],int i);
 double angulo(double vector1[9][3],double vector2[9][3], int i, double P[9][3],double Q[3],	double vectorfinal[9][3]);
-
 
 void main()
 {
@@ -97,7 +94,7 @@ void main()
 			
 			else th[i] = th[i]- (2*angulotemporal); //Era suma no resta, por lo tanto se resta 2 veces ya que se había sumado
 
-			posiciones(P,th,d);					//Obtiene las posiciones de cada eslabón nuevamente.
+			posiciones(P,th,d);						//Obtiene las posiciones de cada eslabón nuevamente.
 					
 		}
 
